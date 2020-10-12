@@ -33,3 +33,7 @@ codegen-fe: ; yarn --cwd frontend codegen
 codegen-be: ; cd backend && sbt clean compile
 
 codegen: codegen-fe codegen-be
+
+docker-build: ; docker build -t fullstack-app .
+
+docker-serve: ; docker run --rm -it fullstack-app

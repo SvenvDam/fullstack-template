@@ -25,23 +25,28 @@ This repo gives you the following:
 * Grpc code generation.
 * Code linting and formatting (`eslint` + `prettier`).
 * Building a production bundle.
+* Ant design components (TODO).
 * Testing (TODO).
 
 ## Shared
 
 * A directory where protobuf definitions can be placed.
 * Makefile with common commands.
-* A Docker build to serve the whole app form one container (TODO).
-* A preconfigured groc service to send logs from the frontend to the backend. This serves both as an example and can be of real-world use.
+* A Docker build to serve the whole app form one container.
+* A preconfigured grpc service to send logs from the frontend to the backend. This serves both as an example and can be of real-world use.
 
 ## Requirements
 
 * `sbt`
 * `yarn`
 * `protoc`
+* `docker`
 
 # TODO
 
 * Add initial tests to front and backend
 * Add Docker build setup
+* Ant design landing page
+* Serve frontend contents from akka http backend
+* Dependabot & scalasteward
 

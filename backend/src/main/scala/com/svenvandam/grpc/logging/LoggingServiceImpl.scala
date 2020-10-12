@@ -4,7 +4,7 @@ import com.typesafe.scalalogging.StrictLogging
 import com.svenvandam.grpc.logging.generated.{Level, LogMessage, Logged, LoggingService}
 import scala.concurrent.Future
 
-class LoggingServiceImpl extends LoggingService with StrictLogging {
+object LoggingServiceImpl extends LoggingService with StrictLogging {
   override def log(in: LogMessage): Future[Logged] = in match {
     case LogMessage(Level.DEBUG, msg, _, _) =>
       logger.debug(msg)

@@ -8,11 +8,17 @@ object Dependencies {
     "ch.megard"             %% "akka-http-cors"   % "0.4.2"
   )
 
+  lazy val akka = Seq(
+    "com.typesafe.akka" %% "akka-actor-typed" % "2.6.10"
+  )
+
   lazy val logging = Seq(
     "com.typesafe.scala-logging" %% "scala-logging"   % "3.9.2",
     "ch.qos.logback"             % "logback-classic"  % "1.2.3",
     "org.slf4j"                  % "log4j-over-slf4j" % "1.7.30"
   )
 
-  lazy val scalatest = "org.scalatest" %% "scalatest" % "3.0.8" % Test
+  lazy val tests = Seq(
+    "org.scalatest" %% "scalatest" % "3.0.8" % Test
+  )
 }

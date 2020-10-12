@@ -1,8 +1,8 @@
 syntax = "proto3";
 
-option java_multiple_files = true;
-
 package com.svenvandam.grpc.logging.generated;
+
+option java_multiple_files = true;
 
 enum Level {
   DEBUG = 0;

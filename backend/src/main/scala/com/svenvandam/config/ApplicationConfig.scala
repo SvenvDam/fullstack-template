@@ -6,8 +6,10 @@ import pureconfig.generic.semiauto._
 import com.typesafe.scalalogging.StrictLogging
 
 sealed trait Environment
-case object Local extends Environment
-case object Production extends Environment
+object Environment {
+  case object Local extends Environment
+  case object Production extends Environment
+}
 
 case class ServerConfig(host: String, port: Int)
 
